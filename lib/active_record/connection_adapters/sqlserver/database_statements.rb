@@ -25,7 +25,7 @@ module ActiveRecord
           end
         end
         
-        def exec_insert(sql, name, binds)
+        def exec_insert(sql, name, binds, pk, sequence_name)
           exec_query sql, name, binds, :insert => true
         end
         
